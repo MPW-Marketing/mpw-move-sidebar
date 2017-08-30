@@ -11,13 +11,13 @@ jQuery(document).ready(function(){
     if (width < 761){
         console.log('mobile');
          jQuery('.page-content').prepend(jQuery('#conv-buttons'));
-         jQuery('.page-content h2:nth-of-type(1)').append(jQuery('#conv-buttons-b'));
+         jQuery('.page-content h2:nth-of-type(1)').before(jQuery('#conv-buttons-b'));
             	is_moved = true;
     }
     jQuery(window).resize(function() {
         if (jqMoveUpdateSize() < 761 && !is_moved){
         		 jQuery('.page-content').prepend(jQuery('#conv-buttons'));
-                 jQuery('.page-content h2:nth-of-type(1)').append(jQuery('#conv-buttons-b'));
+                 jQuery('.page-content h2:nth-of-type(1)').before(jQuery('#conv-buttons-b'));
     			is_moved = true;
         } else if (jqMoveUpdateSize() > 760 && is_moved){
         		jQuery('aside.right .widget-1').prepend(jQuery('#conv-buttons'));
