@@ -32,7 +32,7 @@ function enqueue_sidebar_move_styles() {
         'sidebarloc',
         plugins_url( '/js/sidebarloc.js' , __FILE__ ),
         array( 'jquery' ),
-        '1.0.2',
+        '1.0.3',
         true
     );
 
