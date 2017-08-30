@@ -2,7 +2,7 @@
 /*
 Plugin Name: move sidebar sections
 Description: move conversion buttons to above content on mobile - must be edited to match each theme
-Version: 0.1
+Version: 0.1.1
 Author: 
 License: GPL2
 */
