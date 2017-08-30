@@ -20,9 +20,9 @@ jQuery(document).ready(function(){
                  jQuery('.page-content h2:nth-of-type(1)').before(jQuery('#conv-buttons-b'));
     			is_moved = true;
         } else if (jqMoveUpdateSize() > 760 && is_moved){
-        		jQuery('aside.right .widget-1').prepend(jQuery('#conv-buttons'));
-            jQuery('aside.right .widget-1').prepend(jQuery('#conv-buttons-b'));
-    			is_moved = false;
+        	jQuery('aside.right .widget-1').prepend(jQuery('#conv-buttons-b'));	
+            jQuery('aside.right .widget-1').prepend(jQuery('#conv-buttons'));
+       			is_moved = false;
         }
     });
 });
