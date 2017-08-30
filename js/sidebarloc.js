@@ -10,12 +10,12 @@ jQuery(document).ready(function(){
     var width = jqMoveUpdateSize();
     if (width < 761){
         console.log('mobile');
-         jQuery('.page-content p:nth-of-type(2)').prepend(jQuery('#conv-buttons'));
+         jQuery('.post-content').prepend(jQuery('#conv-buttons'));
     	is_moved = true;
     }
     jQuery(window).resize(function() {
         if (jqMoveUpdateSize() < 761 && !is_moved){
-        		 jQuery('.page-content p:nth-of-type(2)').prepend(jQuery('#conv-buttons'));
+        		 jQuery('.post-content').prepend(jQuery('#conv-buttons'));
     			is_moved = true;
         } else if (jqMoveUpdateSize() > 760 && is_moved){
         		jQuery('aside.right .widget-1').prepend(jQuery('#conv-buttons'));
