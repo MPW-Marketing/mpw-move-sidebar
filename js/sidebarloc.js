@@ -11,8 +11,7 @@ jQuery(document).ready(function(){
     if (width < 761){
         console.log('mobile');
          jQuery('.page-content').prepend(jQuery('#conv-buttons'));
-        jQuery('.page-content p:nth-of-type(2)').prepend(jQuery('#conv-buttons-b'));
-    	is_moved = true;
+            	is_moved = true;
     }
     jQuery(window).resize(function() {
         if (jqMoveUpdateSize() < 761 && !is_moved){
